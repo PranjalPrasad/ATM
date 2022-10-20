@@ -1,0 +1,21 @@
+print("welcome to latur bank of india")
+print("please, insert your card")
+print("**fetching data**")
+bal=5000
+pin=int(input("enter your pin"))
+if pin==1265:
+    choice=input("1)withdraw\n2) deposit\n3)check balance\n please enter your choice")
+    if choice=="withdraw" or choice=="Withdraw":
+        wd=int(input("how much amount do you want to withdraw"))
+        bal=bal-wd
+        print("your current balance is",bal)
+    elif choice=="deposit" or choice=="Deposit":
+        d=int(input("how much amount do you know to deposit"))
+        bal=bal+d
+        print ("your current balance is",bal)
+    elif choice=="check balance" or choice=="check balance":
+      print ("your current balance is",bal)
+    else:
+        print ("invalid input")
+else:
+    print ("invalid pin, please try again")
